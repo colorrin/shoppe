@@ -53,8 +53,9 @@ Shoppe::Engine.routes.draw do
   root to: 'dashboard#home'
 
   namespace :api do
-    scope 'test' do
+    resouces :test do
       get '/' => 'api_test#index'
     end
   end
+  get 'prueba' => 'api_test#index'
 end
