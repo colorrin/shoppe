@@ -1,6 +1,6 @@
 module Shoppe
   module Api
-    class ApiTestController < BaseApiController
+    class TestController < BaseApiController
 
       def index
         render json: {test: 'ok'}
