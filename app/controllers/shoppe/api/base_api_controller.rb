@@ -2,7 +2,7 @@ module Shoppe
   module Api
     class BaseApiController < ApplicationController
       #before_filter :parse_request, :authenticate_user_from_token!
-      before_filter :parse_request
+      #before_filter :parse_request
 
       private
         def authenticate_user_from_token!
