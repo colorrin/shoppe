@@ -57,4 +57,5 @@ Shoppe::Engine.routes.draw do
       get '/' => 'api_test#index'
     end
   end
+  get 'prueba' => 'api_test#index'
 end
