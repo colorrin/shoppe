@@ -51,4 +51,12 @@ Shoppe::Engine.routes.draw do
 
   delete 'logout' => 'sessions#destroy'
   root to: 'dashboard#home'
+
+  scope '/api' do
+    scope '/v1' do
+      scope 'test' do
+        get '/' => 'api_test#index'
+      end
+    end
+  end
 end
